@@ -1,4 +1,4 @@
-#!name=Panels 面板
+#!name=Panel 面板
 #!desc=个人自用信息面板
 
 [Panel]
@@ -8,7 +8,6 @@ SurgePro = script-name=myLaunch-info,title="Surge", content="请刷新", update-
 SUB-INFO-PANEL = script-name=sub_info,update-interval=43200
 # 网络状态
 NET-INFO-PANEL = title=网络状态,content=请刷新,style=info,script-name=net-info-panel
-
 
 [Script]
 # 启动信息
