@@ -1,0 +1,21 @@
+#!name=Panels 面板
+#!desc=个人自用信息面板
+
+[Panel]
+# 启动信息
+SurgePro = script-name=functionstatus,title="Surge", content="请刷新", update-interval=60
+#机场信息
+SUB-INFO-PANEL = script-name=sub_info,update-interval=43200
+# 网络状态
+NET-INFO-PANEL = title=网络状态,content=请刷新,style=info,script-name=net-info-panel
+
+
+[Script]
+# 启动信息
+functionstatus = type=generic, script-path=https://raw.githubusercontent.com/imcks/surge-panel-info/main/myFunctionstatus.js
+
+#机场信息
+sub_info = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/imcks/surge-panel-info/main/mySub-info.js ,script-update-interval=0,argument=url=https%3A%2F%2Fsub.nfol.xyz%2Flink%2FfHmJjZssK9lfjMor%3Flist%3Dsurge&title=NFCLOUD&icon=opticaldisc&color=#5AC8FA
+
+# 网络状态
+net-info-panel = type=generic,script-path=https://raw.githubusercontent.com/imcks/surge-panel-info/main/net-info-panel.js
