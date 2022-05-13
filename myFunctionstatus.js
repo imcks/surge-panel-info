@@ -6,7 +6,7 @@ let startTime = timeTransform(dateNow,dateTime);
 let mitm_status = (await httpAPI("/v1/features/mitm","GET"));
 let rewrite_status = (await httpAPI("/v1/features/rewrite","GET"));
 let scripting_status = (await httpAPI("/v1/features/scripting","GET"));
-let icon_s = mitm_status.enabled;
+let icon_enabled = mitm_status.enabled;
 //点击按钮，刷新dns
 // let icon_s = mitm_status.enabled&&rewrite_status.enabled&&scripting_status.enabled;
 //if ($trigger == "button") await httpAPI("/v1/dns/flush");
@@ -18,7 +18,7 @@ if ($trigger == "button") {
 $done({
     title:"𝗦𝗨𝗥𝗚𝗘ᴾᴿᴼ  已运行"+startTime,
     content:"Mitm:"+icon_status(mitm_status.enabled)+"  Rewrite:"+icon_status(rewrite_status.enabled)+"  Scripting:"+icon_status(scripting_status.enabled),
-    icon: icon_s?"checkmark.seal":"exclamationmark.triangle",
+    icon: icon_enabled?"checkmark.seal":"exclamationmark.triangle",
    "icon-color":icon_s?"#16A951":"#FF7500"
 });
 })();
