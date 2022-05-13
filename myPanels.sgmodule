@@ -3,7 +3,7 @@
 
 [Panel]
 # 启动信息
-SurgePro = script-name=myLaunch-info,title="Surge", content="请刷新", update-interval=60
+SurgePro = script-name=status-info,title="Surge", content="请刷新", update-interval=60
 #机场信息
 SUB-INFO-PANEL = script-name=sub_info,update-interval=43200
 # 网络状态
@@ -11,7 +11,7 @@ NET-INFO-PANEL = title=网络状态,content=请刷新,style=info,script-name=net
 
 [Script]
 # 启动信息
-myLaunch-info = type=generic, script-path=https://raw.githubusercontent.com/imcks/surge-panel-info/main/myLaunch-info.js
+status-info = type=generic, script-path=https://raw.githubusercontent.com/imcks/surge-panel-info/main/panel-status.js
 
 #机场信息
 sub_info = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/imcks/surge-panel-info/main/mySub-info.js ,script-update-interval=0,argument=url=https%3A%2F%2Fsub.nfol.xyz%2Flink%2FfHmJjZssK9lfjMor%3Flist%3Dsurge&title=NFCLOUD&icon=bolt.horizontal.icloud&color=#58C9FD
