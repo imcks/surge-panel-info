@@ -17,7 +17,7 @@ if ($trigger == "button") {
 $done({
     title:"𝗦𝗨𝗥𝗚𝗘ᴾᴿᴼ  已运行"+startTime,
     content:"Mitm:"+icon_status(mitm_status.enabled)+"  Rewrite:"+icon_status(rewrite_status.enabled)+"  Scripting:"+icon_status(scripting_status.enabled),
-    icon: mitm_status?"checkmark.seal":"exclamationmark.triangle",
+    icon: mitm_status.enabled?"checkmark.seal":"exclamationmark.triangle",
    "icon-color":icon_s?"#16A951":"#FF7500"
 });
 })();
