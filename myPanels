@@ -15,7 +15,7 @@ NET-INFO-PANEL = title=网络状态,content=请刷新,style=info,script-name=net
 functionstatus = type=generic, script-path=https://raw.githubusercontent.com/imcks/surge-panel-info/main/myFunctionstatus.js
 
 #机场信息
-sub_info = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/imcks/surge-panel-info/main/mySub-info.js ,script-update-interval=0,argument=url=https%3A%2F%2Fsub.nfol.xyz%2Flink%2FfHmJjZssK9lfjMor%3Flist%3Dsurge&title=NFCLOUD&icon=opticaldisc&color=#5AC8FA
+sub_info = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/imcks/surge-panel-info/main/mySub-info.js ,script-update-interval=0,argument=url=https%3A%2F%2Fsub.nfol.xyz%2Flink%2FfHmJjZssK9lfjMor%3Flist%3Dsurge&title=NFCLOUD&icon=bolt.horizontal.icloud&color=#5AC8FA
 
 # 网络状态
 net-info-panel = type=generic,script-path=https://raw.githubusercontent.com/imcks/surge-panel-info/main/net-info-panel.js
